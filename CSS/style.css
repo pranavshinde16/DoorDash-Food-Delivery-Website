@@ -1,0 +1,208 @@
+/*CSS Reset*/
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+/*CSS Variables*/
+:root{
+    --navbar-height: 59px;
+}
+/*Navigation Bar*/
+#navbar{
+    display: flex;
+    align-items: center;
+    top: 0px;
+}
+/*Logo and Image*/
+#logo img{
+    height: 73px;
+    margin: 12px 31px;
+    width: 133px;
+    filter: contrast(150%)  drop-shadow(2px 4px 6px aqua);
+}
+#navbar ul{
+    display: flex;
+    font-family: 'Acme', sans-serif;
+}
+#navbar ul li{
+   list-style: none;
+    font-size: 1.5rem;
+}
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+#navbar::before{
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+#navbar ul li a:hover{
+    color: rgb(255, 0, 0);
+}
+
+/* Home and Section */
+ #home{
+     display: flex;
+     flex-direction: column;
+     height: 593px;
+     padding: 3px 200px;
+     justify-content: center;
+     align-items: center;
+}
+#home::before{
+    content: "";
+    background:url('/img/OP1.jpg') no-repeat center center/cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 680px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.96;
+    filter: blur(1px);
+}
+#home p{
+    color: white;
+    text-align: center;
+    font-family: 'Acme', sans-serif;
+}
+#home h1{
+    color: rgb(241 7 7);
+    text-align: center;
+    font-family: 'Acme', sans-serif;
+    font-weight: 700;
+    filter: drop-shadow(2px 4px 6px aqua);   
+}
+/* Services Section */
+#services{
+    margin: 16px;
+    display: flex;
+}
+#services .box{
+    border: 2px solid brown;
+    padding: 34px;
+    margin: 3px 6px;
+    border-radius: 25px;
+    background-color: linen;
+}
+#services .box img{
+    height: 170px;
+    margin: auto;
+    display: block;
+
+}
+.box img{
+    border-radius: 24px;
+}
+
+/* Utility Classes */
+.h-primary{
+    font-size: 3.8rem;
+    padding: 25px;
+}
+.h-primaryS{
+    font-size: 2.5rem;
+    text-decoration: underline;
+    padding: 12px;
+    color: rgb(241 7 7);
+    filter: drop-shadow(2px 4px 6px black);   
+}
+.h-secondary{
+    font-size: 2rem;
+    padding: 14px;
+}
+.btn{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: tomato;
+    color: white;
+    margin: 17px;
+    font-size: 1.3rem;
+    font-family: 'Acme', sans-serif;
+    border-radius: 10px;
+    cursor: pointer;
+    filter: contrast(100%);
+}
+.center{
+    text-align: center;
+}
+
+/* CLients Section */
+
+#client-section{
+    position: relative;
+}
+#client-section::before{
+    content:"";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url('/img/Bg2.jpg');
+    z-index: -1;
+    opacity: 0.75;
+    filter: blur(1px);
+}
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.client-item{
+    padding: 34px;
+}
+#clients img{
+    height: 124px;
+}
+
+/* Contact Section */
+
+#contact{
+    position: relative;
+}
+#contact::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.75;
+    background: url('/img/contactus1.jpg') no-repeat center center/cover;
+    filter: blur(1px);
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+#contact-box form{
+    width: 40%;
+}
+#contact-box label{
+    font-size: 1.3rem;
+    font-family: 'Acme', sans-serif;
+}
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1.1rem;
+}
+footer{
+    color: white;
+    background-color: black;
+    padding: 9px 20px;
+}
